@@ -56,6 +56,8 @@
         }
 
     @endphp
+    @include('components.footer')
+
 </body>
 
 </html>

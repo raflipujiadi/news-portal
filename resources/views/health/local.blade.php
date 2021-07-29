@@ -32,63 +32,58 @@
 
         @include('components.navnavbar')
     </section>
-    <div class="upper"></div>
-    <div class="wrapper">
-        <section id="artikel">
-            <img class="gambar" alt="Ini Gambar"
-                src="https://pict-b.sindonews.net/dyn/640/salsabila/slider/2021/06/8564/botol-digeser-ronaldo-harga-saham-cocacola-anjlok-uhi.jpg">
-            <div class="kolom">
-                <p class="deskripsi"></p>
-                <h3>Harga Saham Coca-cola Anjlok, Ini Alasannya...</h3>
-                <h6>Minggu, 20 Juni 2021</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit corrupti beatae doloribus hic
-                    placeat distinctio sequi a nesciunt consequatur dolores, consectetur laudantium accusamus cumque
-                    odio mollitia molestiae exercitationem voluptas!</p>
-                <p><a href="" class="btn-langganan">Baca Selengkapnya</a></p>
-            </div>
-        </section>
-        <section id="artikel">
-            <img class="gambar" alt="Ini Gambar"
-                src="https://pict-b.sindonews.net/dyn/640/salsabila/slider/2021/06/8564/botol-digeser-ronaldo-harga-saham-cocacola-anjlok-uhi.jpg">
-            <div class="kolom">
-                <p class="deskripsi"></p>
-                <h3>Harga Saham Coca-cola Anjlok, Ini Alasannya...</h3>
-                <h6>Minggu, 20 Juni 2021</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit corrupti beatae doloribus hic
-                    placeat distinctio sequi a nesciunt consequatur dolores, consectetur laudantium accusamus cumque
-                    odio mollitia molestiae exercitationem voluptas!</p>
-                <p><a href="" class="btn-langganan">Baca Selengkapnya</a></p>
-            </div>
-        </section>
-        <section>
-            <img class="gambar" alt="Ini Gambar"
-                src="https://pict-b.sindonews.net/dyn/640/salsabila/slider/2021/06/8564/botol-digeser-ronaldo-harga-saham-cocacola-anjlok-uhi.jpg">
-            <div class="kolom">
-                <p class="deskripsi"></p>
-                <h3>Harga Saham Coca-cola Anjlok, Ini Alasannya...</h3>
-                <h6>Minggu, 20 Juni 2021</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit corrupti beatae doloribus hic
-                    placeat distinctio sequi a nesciunt consequatur dolores, consectetur laudantium accusamus cumque
-                    odio mollitia molestiae exercitationem voluptas!</p>
-                <p><a href="" class="btn-langganan">Baca Selengkapnya</a></p>
-            </div>
-        </section>
-    </div>
-    <!--FOOTER-->
-    <div class="footer-bottom">
-        <div class="container-fluid text-center">
-            <p>Copyright &copy; 2021, Amikom. Developed by <a><strong>Akmal, Bagus, Ghanim, Rafli</strong></a></p>
+    <div class="wrapper container">
+
+        <div class="wrapper kolom">
+            <section id="artikel">
+                <img class="gambar" alt="Ini Gambar"
+                    src="https://pict-b.sindonews.net/dyn/640/salsabila/slider/2021/06/8564/botol-digeser-ronaldo-harga-saham-cocacola-anjlok-uhi.jpg">
+                <div class="kolom">
+                    <p class="deskripsi"></p>
+                    <h3>Harga Saham Coca-cola Anjlok, Ini Alasannya...</h3>
+                    <h6>Minggu, 20 Juni 2021</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit corrupti beatae doloribus
+                        hic
+                        placeat distinctio sequi a nesciunt consequatur dolores, consectetur laudantium accusamus cumque
+                        odio mollitia molestiae exercitationem voluptas!</p>
+                    <p><a href="{{ 'artikel/k1' }}" class="btn-langganan">Baca Selengkapnya</a></p>
+                </div>
+            </section>
+            <section id="artikel">
+                <img class="gambar" alt="Ini Gambar"
+                    src="https://pict-b.sindonews.net/dyn/640/salsabila/slider/2021/06/8564/botol-digeser-ronaldo-harga-saham-cocacola-anjlok-uhi.jpg">
+                <div class="kolom">
+                    <p class="deskripsi"></p>
+                    <h3>Harga Saham Coca-cola Anjlok, Ini Alasannya...</h3>
+                    <h6>Minggu, 20 Juni 2021</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit corrupti beatae doloribus
+                        hic
+                        placeat distinctio sequi a nesciunt consequatur dolores, consectetur laudantium accusamus cumque
+                        odio mollitia molestiae exercitationem voluptas!</p>
+                    <p><a href="{{ 'artikel/k2' }}" class="btn-langganan">Baca Selengkapnya</a></p>
+                </div>
+            </section>
+            <section>
+                <img class="gambar" alt="Ini Gambar"
+                    src="https://pict-b.sindonews.net/dyn/640/salsabila/slider/2021/06/8564/botol-digeser-ronaldo-harga-saham-cocacola-anjlok-uhi.jpg">
+                <div class="kolom">
+                    <p class="deskripsi"></p>
+                    <h3>Harga Saham Coca-cola Anjlok, Ini Alasannya...</h3>
+                    <h6>Minggu, 20 Juni 2021</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit corrupti beatae doloribus
+                        hic
+                        placeat distinctio sequi a nesciunt consequatur dolores, consectetur laudantium accusamus cumque
+                        odio mollitia molestiae exercitationem voluptas!</p>
+                    <p><a href="{{ 'artikel/k3' }}" class="btn-langganan">Baca Selengkapnya</a></p>
+                </div>
+            </section>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+    @include('components.menubottom')
+    <!--FOOTER-->
+    @include('components.footer')
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".bg-loader").hide();
-        })
-    </script>
 </body>
 
 </html>

@@ -70,7 +70,7 @@ Route::get('investasi', function () {
 });
 Route::get('kesehatan', function () {
     // return view('health.local');
-    return view('artikel.' . 'k1');
+    return view('health.' . 'local');
 });
 Route::get('teknologi', function () {
     return view('artikel.' . 't1');

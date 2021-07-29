@@ -75,20 +75,8 @@
         </section>
     </div>
     <!--FOOTER-->
-    <div class="footer-bottom">
-        <div class="container-fluid text-center">
-            <p>Copyright &copy; 2021, Amikom. Developed by <a><strong>Akmal, Bagus, Ghanim, Rafli</strong></a></p>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    @include('components.footer')
 
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".bg-loader").fadeOut();
-        })
-    </script>
 </body>
 
 </html>

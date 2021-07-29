@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/my-login.css') }}">
 </head>
 
-<body class="my-login-page">
+<body class="my-login-page" oncontextmenu="return false">
     <section class="h-100">
         <div class="container h-100">
             <div class="row justify-content-md-center h-100">

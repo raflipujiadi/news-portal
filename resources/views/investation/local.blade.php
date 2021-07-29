@@ -32,75 +32,67 @@
 
         @include('components.navnavbar')
     </section>
-    <div class="upper"></div>
-    <div class="wrapper">
-        @if (request())
-            <section id="artikel">
-                <img class="gambar" alt="Ini Gambar"
-                    src="https://akcdn.detik.net.id/visual/2018/02/18/54a15e80-2e9f-47fa-bb9d-529cd17831e7_169.jpeg?w=715&q=90">
-                <div class="kolom">
-                    <p class="deskripsi"></p>
-                    <h3>Dear Anak Muda! Ini 8 Saran Milenial Tua ke Generasi Z</h3>
-                    <h6>Senin, 28 Juni 2021</h6>
-                    <p><strong>Yogyakarta, Jogja News</strong> - Tahun 2021 ini tepat bagi para Generasi Y alias
-                        Generasi
-                        Milenial tua memasuki umur 40 tahun. Berdasarkan konsensus global, milenial adalah generasi yang
-                        lahir
-                        pada awal tahun 1980-an hingga pertengahan 1990-an, atau tahun 1981 hingga 1996 sebagaimana
-                        disebut
-                        dalam literatur buku Generations...</p>
-                    <p><a href="{{ 'artikel/i1' }}" class="btn-langganan">Baca Selengkapnya</a></p>
-                </div>
-            </section>
-            <section id="artikel">
-                <img class="gambar" alt="Ini Gambar"
-                    src="https://akcdn.detik.net.id/visual/2019/03/19/fce38e04-ffef-4a6c-837b-9c543564b904_169.jpeg?w=715&q=90">
-                <div class="kolom">
-                    <p class="deskripsi"></p>
-                    <h3>Corona RI Mengkhawatirkan, IHSG Ambruk 1% Lebih di Sesi II</h3>
-                    <h6>Senin, 28 Juni 2021</h6>
-                    <p><strong>Yogyakarta, Jogja News</strong> - Indeks Harga Saham Gabungan (IHSG) kembali ditutup
-                        ambruk
-                        pada
-                        penutupan perdagangan Senin (28/6/2021), menyusul berlarutnya kasus virus corona (Covid)-19 di
-                        Tanah
-                        Air...</p>
-                    <p><a href="{{ 'artikel/i2' }}" class="btn-langganan">Baca Selengkapnya</a></p>
-                </div>
-            </section>
-            <section>
-                <img class="gambar" alt="Ini Gambar"
-                    src="https://akcdn.detik.net.id/visual/2020/07/23/ilustrasi-investasi-freepik-6_169.jpeg?w=715&q=90">
-                <div class="kolom">
-                    <p class="deskripsi"></p>
-                    <h3>Mulai Tren Impact Investing, 'Barang' Apa Sih Itu?</h3>
-                    <h6>Rabu, 23 Juni 2021</h6>
-                    <p><strong>Yogyakarta, Jogja News</strong> - Istilah impact investing mungkin sudah mulai terdengar
-                        beberapa
-                        waktu belakangan. Tapi sebenarnya ini berbeda dengan tren investasi lainnya. Seperti namanya,
-                        investasi
-                        itu akan memberikan dampak namun bukan dalam bentuk sumbangan...</p>
-                    <p><a href="{{ 'artikel/i3' }}" class="btn-langganan">Baca Selengkapnya</a></p>
-                </div>
-            </section>
-        @endif
-
-    </div>
-    <!--FOOTER-->
-    <div class="footer-bottom">
-        <div class="container-fluid text-center">
-            <p>Copyright &copy; 2021, Amikom. Developed by <a><strong>Akmal, Bagus, Ghanim, Rafli</strong></a></p>
+    <div class="wrapper container">
+        <div class="wrapper kolom">
+            @if (request())
+                <section id="artikel">
+                    <img class="gambar" alt="Ini Gambar"
+                        src="https://akcdn.detik.net.id/visual/2018/02/18/54a15e80-2e9f-47fa-bb9d-529cd17831e7_169.jpeg?w=715&q=90">
+                    <div class="kolom">
+                        <p class="deskripsi"></p>
+                        <h3>Dear Anak Muda! Ini 8 Saran Milenial Tua ke Generasi Z</h3>
+                        <h6>Senin, 28 Juni 2021</h6>
+                        <p><strong>Yogyakarta, Jogja News</strong> - Tahun 2021 ini tepat bagi para Generasi Y alias
+                            Generasi
+                            Milenial tua memasuki umur 40 tahun. Berdasarkan konsensus global, milenial adalah generasi
+                            yang
+                            lahir
+                            pada awal tahun 1980-an hingga pertengahan 1990-an, atau tahun 1981 hingga 1996 sebagaimana
+                            disebut
+                            dalam literatur buku Generations...</p>
+                        <p><a href="{{ 'artikel/i1' }}" class="btn-langganan">Baca Selengkapnya</a></p>
+                    </div>
+                </section>
+                <section id="artikel">
+                    <img class="gambar" alt="Ini Gambar"
+                        src="https://akcdn.detik.net.id/visual/2019/03/19/fce38e04-ffef-4a6c-837b-9c543564b904_169.jpeg?w=715&q=90">
+                    <div class="kolom">
+                        <p class="deskripsi"></p>
+                        <h3>Corona RI Mengkhawatirkan, IHSG Ambruk 1% Lebih di Sesi II</h3>
+                        <h6>Senin, 28 Juni 2021</h6>
+                        <p><strong>Yogyakarta, Jogja News</strong> - Indeks Harga Saham Gabungan (IHSG) kembali ditutup
+                            ambruk
+                            pada
+                            penutupan perdagangan Senin (28/6/2021), menyusul berlarutnya kasus virus corona (Covid)-19
+                            di
+                            Tanah
+                            Air...</p>
+                        <p><a href="{{ 'artikel/i2' }}" class="btn-langganan">Baca Selengkapnya</a></p>
+                    </div>
+                </section>
+                <section>
+                    <img class="gambar" alt="Ini Gambar"
+                        src="https://akcdn.detik.net.id/visual/2020/07/23/ilustrasi-investasi-freepik-6_169.jpeg?w=715&q=90">
+                    <div class="kolom">
+                        <p class="deskripsi"></p>
+                        <h3>Mulai Tren Impact Investing, 'Barang' Apa Sih Itu?</h3>
+                        <h6>Rabu, 23 Juni 2021</h6>
+                        <p><strong>Yogyakarta, Jogja News</strong> - Istilah impact investing mungkin sudah mulai
+                            terdengar
+                            beberapa
+                            waktu belakangan. Tapi sebenarnya ini berbeda dengan tren investasi lainnya. Seperti
+                            namanya,
+                            investasi
+                            itu akan memberikan dampak namun bukan dalam bentuk sumbangan...</p>
+                        <p><a href="{{ 'artikel/i3' }}" class="btn-langganan">Baca Selengkapnya</a></p>
+                    </div>
+                </section>
+            @endif
         </div>
+
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".bg-loader").fadeOut();
-        })
-    </script>
+    @include('components.menubottom')
+    @include('components.footer')
 </body>
 
 </html>

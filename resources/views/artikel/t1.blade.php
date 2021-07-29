@@ -32,70 +32,83 @@
 
         @include('components.navnavbar')
     </section>
-    <div class="upper"></div>
-    <div class="wrapper">
-        <p>
-        <h3>Gaji Gede! 10 Jurusan S2 yang Dianggap Paling Menguntungkan</h3>
-        <h5>Kamis, 10 Juni 2021</h5>
-        <img class="gambarartikel" alt="Ini Gambar"
-            src="https://akcdn.detik.net.id/visual/2020/10/05/infografis-resesi-kacau-harga-pangan-turun-uang-kuliah-malah-nge-gas_169.jpeg?w=715&q=90">
-        </p>
-        <p class="teks">
-            <strong>Yogyakarta, Jogja News</strong> - Microsoft subsidiary GitHub announced the new AI-powered Copilot
-            service as a private beta for developers on June 29, 2021, with the “AI pair programmer” embedded in
-            Microsoft’s massively popular Visual Studio Code editor as an extension for beta users. As developers write
-            their code, Copilot will step in to make suggestions, much like the autocomplete feature in email
-            applications like Gmail, but for code written in Python, JavaScript, TypeScript, Ruby, Go, and other
-            programming languages.
+    <div class="wrapper container">
+        <div class="wrapper kolom">
+            <section id="artikel">
+                <h3>Gaji Gede! 10 Jurusan S2 yang Dianggap Paling Menguntungkan</h3>
+                <h5>Kamis, 10 Juni 2021</h5>
+                <img class="gambarartikel" alt="Ini Gambar"
+                    src="https://akcdn.detik.net.id/visual/2020/10/05/infografis-resesi-kacau-harga-pangan-turun-uang-kuliah-malah-nge-gas_169.jpeg?w=715&q=90">
+                </p>
+                <p class="teks">
+                    <strong>Yogyakarta, Jogja News</strong> - Microsoft subsidiary GitHub announced the new AI-powered
+                    Copilot
+                    service as a private beta for developers on June 29, 2021, with the “AI pair programmer” embedded in
+                    Microsoft’s massively popular Visual Studio Code editor as an extension for beta users. As
+                    developers
+                    write
+                    their code, Copilot will step in to make suggestions, much like the autocomplete feature in email
+                    applications like Gmail, but for code written in Python, JavaScript, TypeScript, Ruby, Go, and other
+                    programming languages.
 
 
-        </p>
-        <p class="teks">
-            Copilot was built in collaboration with OpenAI, the artificial intelligence lab founded by Elon Musk, Sam
-            Altman, and others and that Microsoft invested $1 billion in last year. OpenAI adapted its GPT-3
-            language-prediction model for computer code for this project in a model it calls Codex. Teaching neural
-            networks to write code is not a new endeavor, with startups like TabNine and Kite working on similar
-            projects. But the heft of Microsoft and OpenAI means Copilot is a strong entrant to the market from Day
-            1.Philip John Basile, senior front-end developer at cybersecurity company Dragos, has dabbled with these
-            other
-            AI coding assistants, but told InfoWorld that Copilot is already “just on another level.”
+                </p>
+                <p class="teks">
+                    Copilot was built in collaboration with OpenAI, the artificial intelligence lab founded by Elon
+                    Musk,
+                    Sam
+                    Altman, and others and that Microsoft invested $1 billion in last year. OpenAI adapted its GPT-3
+                    language-prediction model for computer code for this project in a model it calls Codex. Teaching
+                    neural
+                    networks to write code is not a new endeavor, with startups like TabNine and Kite working on similar
+                    projects. But the heft of Microsoft and OpenAI means Copilot is a strong entrant to the market from
+                    Day
+                    1.Philip John Basile, senior front-end developer at cybersecurity company Dragos, has dabbled with
+                    these
+                    other
+                    AI coding assistants, but told InfoWorld that Copilot is already “just on another level.”
 
-            The announcement certainly made a splash, generating 1,200 comments on Hacker News in just two days and
-            driving hundreds of early users to show off its hits and misses on social media.
-            In terms of the developer experience today, a few early users—many of whom are GitHub Stars or Microsoft
-            MVPs—have been showing off the capabilities on social media and in livestreams. Here’s what they have to
-            say.
-        </p>
-        <p class="teks">
-            <strong>What works well in Copilot</strong>
-        </p>
-        <p class="teks">
-            Cassidy Williams, director of developer experience at PaaS company Netlify, said that Copilot “is going to
-            be incredibly useful for things like smaller utilities that I have to often rewrite across various projects.
-            The fact that I could use it to do certain capitalization patterns, or write certain pattern-matching
-            functions for me that I would normally have to either just hunker down and write or look up how to do for
-            the 100th time,” she told InfoWorld.
+                    The announcement certainly made a splash, generating 1,200 comments on Hacker News in just two days
+                    and
+                    driving hundreds of early users to show off its hits and misses on social media.
+                    In terms of the developer experience today, a few early users—many of whom are GitHub Stars or
+                    Microsoft
+                    MVPs—have been showing off the capabilities on social media and in livestreams. Here’s what they
+                    have to
+                    say.
+                </p>
+                <p class="teks">
+                    <strong>What works well in Copilot</strong>
+                </p>
+                <p class="teks">
+                    Cassidy Williams, director of developer experience at PaaS company Netlify, said that Copilot “is
+                    going
+                    to
+                    be incredibly useful for things like smaller utilities that I have to often rewrite across various
+                    projects.
+                    The fact that I could use it to do certain capitalization patterns, or write certain
+                    pattern-matching
+                    functions for me that I would normally have to either just hunker down and write or look up how to
+                    do
+                    for
+                    the 100th time,” she told InfoWorld.
 
-            “Instead of autocomplete, it gives me ideas for full-fledged functions, random code items, and can even pull
-            together some written paragraphs for when I blog,” Dragos’s Basile said, based on his early experiences with
-            the tool.</p>
-        </p>
-    </div>
-    <!--FOOTER-->
-    <div class="footer-bottom">
-        <div class="container-fluid text-center">
-            <p>Copyright &copy; 2021, Amikom. Developed by <a><strong>Akmal, Bagus, Ghanim, Rafli</strong></a></p>
+                    “Instead of autocomplete, it gives me ideas for full-fledged functions, random code items, and can
+                    even
+                    pull
+                    together some written paragraphs for when I blog,” Dragos’s Basile said, based on his early
+                    experiences
+                    with
+                    the tool.</p>
+                </p>
+            </section>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    @include('components.menubottom')
 
+    <!--FOOTER-->
+    @include('components.footer')
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".bg-loader").fadeOut();
-        })
-    </script>
 </body>
 
 </html>

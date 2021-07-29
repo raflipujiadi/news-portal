@@ -15,6 +15,7 @@ body {
     margin: auto;
     position: relative;
     background: white;
+    overflow: hidden;
 }
 
 .logo a {
@@ -23,7 +24,7 @@ body {
     float: left;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    color: #cd113b;
+    color: #000;
 }
 
 .menu {
@@ -65,17 +66,22 @@ nav ul li a:hover {
 }
 
 section.menu {
-    margin: auto;
+    margin: 0;
     display: flex;
     margin-bottom: 50px;
     position: fixed;
     z-index: 2;
     width: 100%;
-    margin-bottom: 2em;
 }
-
+section.menu-bottom {
+    margin: 0;
+    display: flex;
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
 .kolom {
-    margin-top: 50px;
     width: 100%;
     margin-bottom: 0px;
 }
@@ -185,5 +191,80 @@ h1 {
     margin-top: 50px;
 }
 #artikel:first-child {
-    margin-top: 96px;
+    margin-top: 180px;
+}
+@media screen and (max-width: 760px) {
+    #navbarSupportedContent {
+        display: flex;
+    }
+    ul.navbar-nav {
+        flex-direction: row;
+    }
+    li.nav-item a.nav-link {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    #artikel:first-child {
+        margin-top: 20px;
+    }
+}
+.bg-red {
+    background-color: #d83a56;
+}
+a[href="/"] {
+    color: #ffffff;
+}
+.bg-menubottom {
+    background-color: #cd113b;
+}
+
+.menu-button {
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 300px;
+    background: #131313;
+    position: relative;
+    text-align: center;
+    margin: 51px 0px;
+}
+.menu-button ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+.menu-button li {
+    display: block;
+    padding: 15px 0 15px 0;
+    border-bottom: #fff 1px solid;
+}
+.menu-button li:hover {
+    display: block;
+    background: #fff;
+    padding: 15px 0 15px 0;
+    border-bottom: #fff 1px solid;
+}
+.menu-button ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #000;
+}
+.menu-button ul li a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.menu-button a {
+    text-decoration: none;
+    color: #000;
+}
+.menu-button a:hover {
+    text-decoration: none;
+    color: #000;
+}
+#active {
+    background: #d83a56;
+    width: 100%;
+}
+[class*="col-"] {
+    background-color: #cd113b;
 }
