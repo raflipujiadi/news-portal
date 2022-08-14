@@ -1,6 +1,6 @@
 <nav class="navbar wrapper container d-md-flex d-lg-flex d-xl-flex">
     <div class="logo col-">
-        <a href="">Jogja News</a>
+    <a href="">Jogja News</a>
     </div>
     <div class="wrapper nav">
         <!-- menu utama -->

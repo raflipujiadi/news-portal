@@ -1,5 +1,10 @@
 <nav class="navbar wrapper container d-md-flex d-lg-flex d-xl-flex">
     <div class="logo col-">
+    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+    </button>
         <a href="">Jogja News</a>
     </div>
     <div class="wrapper nav">
