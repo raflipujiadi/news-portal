@@ -1,4 +1,4 @@
-<nav class="navbar wrapper container">
+<nav class="navbar wrapper container d-md-flex d-lg-flex d-xl-flex">
     <div class="logo col-">
         <a href="">Jogja News</a>
     </div>

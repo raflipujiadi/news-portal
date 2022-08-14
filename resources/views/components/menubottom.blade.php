@@ -1,4 +1,4 @@
-<section class="wrapper container menu-bottom">
+<section class="wrapper menu-bottom">
     <!-- Bottom Navbar -->
     <nav class="navbar-dark bg-menubottom rounded navbar-expand d-md-none d-lg-none d-xl-none">
         <ul class="navbar-nav nav-justified w-100 h-12">
