@@ -60,3 +60,14 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Installation
+    1.  install XAMPP
+    2.  install NPM
+    3.  install Laravel
+    4.  setting database
+    5.  check app.css in public folder and local.blade.php
+    6.  change margin-top to padding-top in id artikel:first-child
+
+

@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name', 'Laravel') }}</title>
-    <script src="{{ URL::asset('js/app.js') }}"></script>
+    <title><?php echo e(config('app.name', 'Laravel')); ?></title>
+    <script src="<?php echo e(URL::asset('js/app.js')); ?>"></script>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    {{-- <link rel="stylesheet" href="/css/app.css"> --}}
+    <link rel="stylesheet" href="<?php echo e(asset('css/app.css')); ?>">
+    
 
     <!-- loader -->
-    <link rel="stylesheet" href="{{ asset('css/loader.css') }}">
+    <link rel="stylesheet" href="<?php echo e(asset('css/loader.css')); ?>">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -30,11 +30,11 @@
 
     <section class="menu">
 
-        @include('components.navnavbar')
+        <?php echo $__env->make('components.navnavbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     </section>
         <div class="wrapper container">
             <div class="wrapper container">
-                @if (request())
+                <?php if(request()): ?>
                 <section id="artikel">
                     <img class="gambar" alt="Ini Gambar"
                         src="https://akcdn.detik.net.id/visual/2018/02/18/54a15e80-2e9f-47fa-bb9d-529cd17831e7_169.jpeg?w=715&q=90">
@@ -50,7 +50,7 @@
                             pada awal tahun 1980-an hingga pertengahan 1990-an, atau tahun 1981 hingga 1996 sebagaimana
                             disebut
                             dalam literatur buku Generations...</p>
-                        <p><a href="{{ 'artikel/i1' }}" class="btn-langganan">Baca Selengkapnya</a></p>
+                        <p><a href="<?php echo e('artikel/i1'); ?>" class="btn-langganan">Baca Selengkapnya</a></p>
                     </div>
                 </section>
                 <section id="artikel">
@@ -67,7 +67,7 @@
                             di
                             Tanah
                             Air...</p>
-                        <p><a href="{{ 'artikel/i2' }}" class="btn-langganan">Baca Selengkapnya</a></p>
+                        <p><a href="<?php echo e('artikel/i2'); ?>" class="btn-langganan">Baca Selengkapnya</a></p>
                     </div>
                 </section>
                 <section id="artikel">
@@ -84,15 +84,16 @@
                             namanya,
                             investasi
                             itu akan memberikan dampak namun bukan dalam bentuk sumbangan...</p>
-                        <p><a href="{{ 'artikel/i3' }}" class="btn-langganan">Baca Selengkapnya</a></p>
+                        <p><a href="<?php echo e('artikel/i3'); ?>" class="btn-langganan">Baca Selengkapnya</a></p>
                     </div>
                 </section>
-                @endif
+                <?php endif; ?>
             </div>
         </div>
     </section>
-    @include('components.menubottom')
-    @include('components.footer')
+    <?php echo $__env->make('components.menubottom', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    <?php echo $__env->make('components.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </body>
 
 </html>
+<?php /**PATH D:\Programming\php\Laravel\final project\news-portal\resources\views/investation/local.blade.php ENDPATH**/ ?>

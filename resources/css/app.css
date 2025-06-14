@@ -16,6 +16,10 @@ body {
     position: relative;
 }
 
+.wrapper .kolom{
+    top: 3rem;
+}
+
 .logo a {
     font-size: 50px;
     font-weight: bold;

@@ -60,7 +60,7 @@ a.btn-langganan:hover {
 }
 
 #artikel:first-child {
-    margin-top: 180px;
+    padding-top: 10%;
 }
 
 .bg-menubottom {
@@ -280,7 +280,5 @@ section.menu-bottom {
         font-size: 12px;
         margin: 0 5px;
     }
-    #artikel:first-child {
-        margin-top: 20px;
-    }
+
 }
