@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
     {{-- <link rel="stylesheet" href="/css/app.css"> --}}
 
     <!-- loader -->
@@ -33,6 +33,13 @@
     <section class="menu">
         @include('components.navnavbar')
     </section>
+    <div class="">news post</div>
+    <div class="">Politics, Sports, Technology</div>
+    <div class="">Roles</div>
+    <div class="">Comments</div>
+    <div class="">Tags</div>
+    <div class="">Media Uploads</div>
+    <div class="">Search</div>
     <div class="wrapper container">
         <div class="wrapper kolom">
             <!-- slider -->

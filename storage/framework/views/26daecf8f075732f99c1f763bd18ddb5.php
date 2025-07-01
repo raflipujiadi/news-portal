@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo e(asset('css/app.css')); ?>">
-    <link rel="stylesheet" href="<?php echo e(asset('css/home.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('css/dashboard.css')); ?>">
     
 
     <!-- loader -->
@@ -33,6 +33,13 @@
     <section class="menu">
         <?php echo $__env->make('components.navnavbar', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
     </section>
+    <div class="">news post</div>
+    <div class="">Politics, Sports, Technology</div>
+    <div class="">Roles</div>
+    <div class="">Comments</div>
+    <div class="">Tags</div>
+    <div class="">Media Uploads</div>
+    <div class="">Search</div>
     <div class="wrapper container">
         <div class="wrapper kolom">
             <!-- slider -->

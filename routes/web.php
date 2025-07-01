@@ -30,32 +30,12 @@ Route::get('pendidikan', function () {
     return view('artikel.' . 'p1');
 });
 
-Route::get('login', function () {
-    return view('auth.login');
-});
-
-Route::get('logout', function () {
-    auth()->logout();
-    Session()->flush();
-
-    return Redirect::to('/');
-})->name('logout');
-
-Route::get('register', function () {
-    return view('auth.register');
-    // return Redirect::to('/');
-});
-
 Route::get('dashboard', function () {
     if (Auth::check()) {
         return view('welcome');
     } else {
         return Redirect::to('/login');
     };
-});
-
-Route::get('forgot', function () {
-    return view('auth.forgot-password');
 });
 
 Route::get('about', function () {

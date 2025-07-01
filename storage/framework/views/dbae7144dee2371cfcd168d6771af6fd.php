@@ -1,102 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Kodinger">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="<?php echo e(URL::asset('css/my-login.css')); ?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
 </head>
-
-<body class="my-login-page">
-    <section class="h-100">
-        <div class="container h-100">
-            <div class="row justify-content-md-center h-100">
-                <div class="card-wrapper">
-                    <div class="brand">
-                        <img src="img/logo.jpg" alt="bootstrap 4 login page">
-                    </div>
-                    <div class="card fat">
-                        <div class="card-body">
-                            <h4 class="card-title">Register</h4>
-                            <form method="POST" class="my-login-validation" novalidate="">
-                                <?php echo csrf_field(); ?>
-
-                                <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input id="name" type="text" class="form-control" name="name" required autofocus>
-                                    <div class="invalid-feedback">
-                                        What's your name?
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="email">E-Mail Address</label>
-                                    <input id="email" type="email" class="form-control" name="email" required>
-                                    <div class="invalid-feedback">
-                                        Your email is invalid
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input id="password" type="password" class="form-control" name="password" required
-                                        data-eye>
-                                    <div class="invalid-feedback">
-                                        Password is required
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">Re-type Password</label>
-                                    <input id="password" type="password" class="form-control" name="password-retype"
-                                        required data-eye>
-                                    <div class="invalid-feedback">
-                                        Password is required
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <div class="custom-checkbox custom-control">
-                                        <input type="checkbox" name="agree" id="agree" class="custom-control-input"
-                                            required="">
-                                        <label for="agree" class="custom-control-label">I agree to the <a href="#">Terms
-                                                and Conditions</a></label>
-                                        <div class="invalid-feedback">
-                                            You must agree with our Terms and Conditions
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-group m-0">
-                                    <button type="submit" class="btn btn-primary btn-block">
-                                        Register
-                                    </button>
-                                </div>
-                                <div class="mt-4 text-center">
-                                    Already have an account? <a href="/login">Login</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        Copyright &copy; 2017 &mdash; Your Company
-                    </div>
-                </div>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-96">
+        <h2 class="text-2xl font-bold mb-6 text-center">Register</h2>
+        <form action="<?php echo e(route('register')); ?>" method="post">
+        <?php echo csrf_field(); ?>
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                <input type="text" name="name" id="name" class="shadow appearance-noneborder rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline" value="old('name')" required autofocus>
+                <?php $__errorArgs = ['name'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                    <p class="text-red-500 text-x italic"><?php echo e($message); ?></p>
+                <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
             </div>
-        </div>
-    </section>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="<?php echo e(URL::asset('js/my-login.js')); ?>"></script>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                <input type="email" name="email" id="email" class="shadow appearance-noneborder rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline" value="old('name')" required autofocus>
+                <?php $__errorArgs = ['email'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                    <p class="text-red-500 text-x italic"><?php echo e($message); ?></p>
+                <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password:</label>
+                <input type="password" name="password" id="password" class="shadow appearance-noneborder rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline" value="old('name')" required autofocus>
+                <?php $__errorArgs = ['password'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                    <p class="text-red-500 text-x italic"><?php echo e($message); ?></p>
+                <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+            </div>
+            <div class="mb-6">
+                <label for="password_confirmation" class="block text-gray-700 text-sm font-bold mb-2">Confirm Password:</label>
+                <input type="password" name="password_confirmation" id="password_confirmation" class="shadow appearance-noneborder rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline" value="old('name')" required autofocus>
+            </div>
+            <div class="flex items-center justify-between">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:shadow-outline">
+                    Register
+                </button>
+                <a href="<?php echo e(route('login')); ?>" class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
+                    Already have an account? Login
+                </a>
+            </div>
+        </form>
+    </div>
 </body>
-
-</html>
-<?php /**PATH D:\Programming\php\Laravel\final project\news-portal\resources\views/auth/register.blade.php ENDPATH**/ ?>
+</html><?php /**PATH D:\Programming\php\Laravel\final project\news-portal\resources\views/auth/register.blade.php ENDPATH**/ ?>
